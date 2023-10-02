@@ -13,27 +13,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>ToDo приложение</title>
+    <title>ToDo Liste</title>
   </head>
   <body>
     <div class="container">
-      <div class="display-4 mb-2">ToDo приложение</div>
-      <div class="h4 mb-5">список задач на сегодня</div>
+      <div class="display-4 mb-2">ToDo Liste</div>
+      <div class="h4 mb-5">ToDo Liste für heute</div>
 
       <!-- List of tasks -->
       <div class="card mb-4">
-        <ul id="tasksList" class="list-group list-group-flush">
-          <li id="emptyList" class="list-group-item empty-list">
-            <img src="./img/leaf.svg" alt="Empty" width="48" class="mt-3" />
-            <div class="empty-list__title">Список дел пуст</div>
-          </li>
-        </ul>
+        <ul id="tasksList" class="list-group list-group-flush"></ul>
       </div>
       <!-- //List of tasks -->
 
       <!-- Form -->
       <div class="card bg-light">
-        <div class="card-header">Добавить новую задачу</div>
+        <div class="card-header">Aufgabe hinzufügen</div>
         <div class="card-body">
           <form id="form">
             <div class="form-group">
@@ -41,27 +36,22 @@
                 type="text"
                 class="form-control"
                 id="taskInput"
-                placeholder="Текст задачи"
+                placeholder="Aufgabe"
                 required
               />
               <small id="emailHelp" class="form-text text-muted"
-                >Что делаем, сколько времени тратим, какой результат
-                получаем.</small
+                >Was machen wir, wie viel Zeit verbringen wir und welches
+                Ergebnis erzielen wir?</small
               >
             </div>
             <button type="submit" class="btn btn-primary btn-lg active">
-              Добавить
+              Hinzufügen
             </button>
           </form>
         </div>
       </div>
       <!-- //Form  -->
       <!-- <button id="removeDoneTasks" class="btn btn-secondary mt-4 float-right">Удалить выполненные задачи</button> -->
-    </div>
-
-    <div class="copyright">
-      Бесплатный практикум по JavaScript от
-      <a href="https://webcademy.ru" target="_blank">ВебКадеми</a>
     </div>
 
     <script src="js/main.js"></script>
